@@ -1,15 +1,7 @@
 import "./hotel.css";
-import Navbar from "../../components/navbar/Navbar";
-import Header from "../../components/header/Header";
-import MailList from "../../components/mailList/MailList";
-import Footer from "../../components/footer/Footer";
-import {
- FaArrowAltCircleLeft,
-FaArrowAltCircleRight,
-} from "react-icons/fa";
-import {
- MdCancel,MdLocationOn
-} from "react-icons/md";
+import { Navbar, Header, MailList, Footer } from "../../components";
+import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
+import { MdCancel, MdLocationOn } from "react-icons/md";
 import { useState } from "react";
 
 const Hotel = () => {
