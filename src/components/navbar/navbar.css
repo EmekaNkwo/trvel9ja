@@ -1,14 +1,13 @@
 .navbar {
-  height: 50px;
+  height: 80px;
   background-color: #003580;
   display: flex;
   justify-content: center;
-  padding: 2% 0;
 }
 
 .navContainer {
   width: 100%;
-  max-width: 1024px;
+
   color: white;
   display: flex;
   align-items: center;
@@ -16,8 +15,13 @@
 }
 
 .logo {
-  font-weight: 500;
-  font-size: 1.4rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-decoration: none;
+  color: #fff;
 }
 
 .navButton {
@@ -30,4 +34,31 @@
   cursor: pointer;
   height: 40px;
   width: 100px;
+}
+.navOutline {
+  margin-left: 20px;
+  color: #ffffff;
+  border: 2px solid #fff;
+  background-color: transparent;
+  font-weight: 500;
+  padding: 10px;
+  cursor: pointer;
+  height: 40px;
+  width: 100px;
+}
+
+@media only screen and (min-width: 1201px) {
+  .navContainer {
+    max-width: 1024px;
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .navContainer {
+    max-width: 768px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .navContainer {
+    padding: 1rem;
+  }
 }

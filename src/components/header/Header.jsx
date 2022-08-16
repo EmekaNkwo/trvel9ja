@@ -1,11 +1,4 @@
-import {
-  FaBed,
-  FaCalendarAlt,
-  FaCar,
-  FaUser,
-  FaPlane,
-  FaTaxi,
-} from "react-icons/fa";
+import { FaBed, FaCalendarAlt, FaLocationArrow } from "react-icons/fa";
 import "./header.css";
 import { DateRange } from "react-date-range";
 import { useState } from "react";
@@ -26,8 +19,8 @@ const Header = ({ type }) => {
   ]);
   const [openOptions, setOpenOptions] = useState(false);
   const [options, setOptions] = useState({
-    adult: 1,
-    children: 0,
+    // adult: 1,
+    // children: 0,
     room: 1,
   });
 
@@ -53,7 +46,7 @@ const Header = ({ type }) => {
           type === "list" ? "headerContainer listMode" : "headerContainer"
         }
       >
-        <div className="headerList">
+        {/* <div className="headerList">
           <div className="headerListItem active">
             <FaBed />
             <span>Stays</span>
@@ -74,7 +67,7 @@ const Header = ({ type }) => {
             <FaTaxi />
             <span>Airport taxis</span>
           </div>
-        </div>
+        </div> */}
         {type !== "list" && (
           <>
             <h1 className="headerTitle">
@@ -87,7 +80,7 @@ const Header = ({ type }) => {
             <button className="headerBtn">Sign in / Register</button>
             <div className="headerSearch">
               <div className="headerSearchItem">
-                <FaBed className="headerIcon" />
+                <FaLocationArrow className="headerIcon" />
                 <input
                   type="text"
                   placeholder="Where are you going?"
@@ -116,14 +109,18 @@ const Header = ({ type }) => {
                 )}
               </div>
               <div className="headerSearchItem">
-                <FaUser className="headerIcon" />
+                <FaBed className="headerIcon" />
+                {/* <span
+                  onClick={() => setOpenOptions(!openOptions)}
+                  className="headerSearchText"
+                >{`${options.adult} adult · ${options.children} children · ${options.room} room`}</span> */}
                 <span
                   onClick={() => setOpenOptions(!openOptions)}
                   className="headerSearchText"
-                >{`${options.adult} adult · ${options.children} children · ${options.room} room`}</span>
+                >{`${options.room} room`}</span>
                 {openOptions && (
                   <div className="options">
-                    <div className="optionItem">
+                    {/* <div className="optionItem">
                       <span className="optionText">Adult</span>
                       <div className="optionCounter">
                         <button
@@ -143,8 +140,8 @@ const Header = ({ type }) => {
                           +
                         </button>
                       </div>
-                    </div>
-                    <div className="optionItem">
+                    </div> */}
+                    {/* <div className="optionItem">
                       <span className="optionText">Children</span>
                       <div className="optionCounter">
                         <button
@@ -164,7 +161,7 @@ const Header = ({ type }) => {
                           +
                         </button>
                       </div>
-                    </div>
+                    </div> */}
                     <div className="optionItem">
                       <span className="optionText">Room</span>
                       <div className="optionCounter">
