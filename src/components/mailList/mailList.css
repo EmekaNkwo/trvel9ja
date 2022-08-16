@@ -16,7 +16,7 @@
   padding: 10px;
   border: none;
   margin-right: 10px;
-  border-radius: 5px;
+  border-radius: 4px;
   font-size: 1rem;
 }
 .mailInputContainer > input::placeholder {
@@ -29,7 +29,7 @@
   color: white;
   font-weight: 500;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
   cursor: pointer;
   padding: 10px;
   width: 100px;
