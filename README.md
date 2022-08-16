@@ -1,7 +1,7 @@
-# Trvel9ja Website
+# Trvel Website
 
 This is a travel website that helps tourist makes reservation and find more information about
-hotels in the location they intend to travel to in Nigeria.
+hotels in the location they intend to travel to
 
 ## How to Setup
 
