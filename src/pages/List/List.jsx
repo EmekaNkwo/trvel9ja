@@ -15,7 +15,7 @@ const List = () => {
   return (
     <div>
       <Navbar />
-      <Header type="list" />
+      {/* <Header type="list" /> */}
       <div className="listContainer">
         <div className="listWrapper">
           <div className="listSearch">
@@ -53,7 +53,7 @@ const List = () => {
                   </span>
                   <input type="number" className="lsOptionInput" />
                 </div>
-                <div className="lsOptionItem">
+                {/* <div className="lsOptionItem">
                   <span className="lsOptionText">Adult</span>
                   <input
                     type="number"
@@ -70,7 +70,7 @@ const List = () => {
                     className="lsOptionInput"
                     placeholder={options.children}
                   />
-                </div>
+                </div> */}
                 <div className="lsOptionItem">
                   <span className="lsOptionText">Room</span>
                   <input

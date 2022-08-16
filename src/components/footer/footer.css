@@ -1,14 +1,12 @@
 .footer {
-  width: 100%;
-  width: 1024px;
   font-size: 14px;
+  width: 100%;
 }
 
 .fLists {
-  width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin: 2rem auto;
 }
 
 .fList {
@@ -18,6 +16,24 @@
 
 .fListItem {
   margin-bottom: 10px;
-  color: #003580;
+  color: #333;
   cursor: pointer;
+}
+
+.fText {
+  text-align: center;
+  padding: 1.2rem;
+  color: #011632;
+}
+
+@media only screen and (min-width: 1201px) {
+  .fLists {
+    max-width: 1024px;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .fLists {
+    max-width: 768px;
+  }
 }

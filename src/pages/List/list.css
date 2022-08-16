@@ -6,7 +6,6 @@
 
 .listWrapper {
   width: 100%;
-  max-width: 1024px;
   display: flex;
   gap: 20px;
 }
@@ -36,15 +35,18 @@
 
 .lsItem > label {
   font-size: 12px;
+  font-weight: 600;
 }
 
 .lsItem > input {
-  height: 30px;
+  height: 35px;
   border: none;
   padding: 5px;
+  font-size: 1.1rem;
+  outline: none;
 }
 .lsItem > span {
-  height: 30px;
+  height: 35px;
   padding: 5px;
   background-color: white;
   display: flex;
@@ -64,8 +66,16 @@
   font-size: 12px;
 }
 
+.lsOptionItem > span {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
 .lsOptionInput {
   width: 50px;
+  border: none;
+  padding: 0.1rem;
+  outline: none;
 }
 
 .listSearch > button {
@@ -80,4 +90,62 @@
 
 .listResult {
   flex: 3;
+}
+
+@media only screen and (min-width: 1201px) {
+  .listWrapper {
+    max-width: 1024px;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .listWrapper {
+    max-width: 768px;
+    flex-direction: column;
+  }
+
+  .listSearch {
+    position: relative;
+  }
+
+  .lsTitle {
+    font-size: 1.6rem;
+  }
+
+  .lsItem > label {
+    font-size: 1rem;
+  }
+
+  .lsItem > span {
+    font-size: 1rem;
+  }
+  .lsOptionInput {
+    width: 70px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .listWrapper {
+    max-width: 512px;
+    flex-direction: column;
+  }
+
+  .listSearch {
+    position: relative;
+  }
+
+  .lsTitle {
+    font-size: 1.6rem;
+  }
+
+  .lsItem > label {
+    font-size: 1rem;
+  }
+
+  .lsItem > span {
+    font-size: 1rem;
+  }
+  .lsOptionInput {
+    width: 70px;
+  }
 }
