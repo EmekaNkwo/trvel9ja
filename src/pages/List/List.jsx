@@ -1,5 +1,5 @@
 import "./list.css";
-import { Navbar, Header, SearchItem } from "../../components";
+import { Navbar, SearchItem } from "../../components";
 import { useLocation } from "react-router-dom";
 import { useState } from "react";
 import { format } from "date-fns";
